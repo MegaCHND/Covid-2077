@@ -43,4 +43,18 @@ public class ClientHandle : MonoBehaviour
 
         GameManager.players[_id].transform.rotation = _rotation;
     }
+
+    public static void CreateInteractible(Packet _packet) {
+        int _interactibleID = _packet.ReadInt();
+        Vector3 interactiblePos = _packet.ReadVector3();
+        bool _interactedWith = _packet.ReadBool();
+
+        GameManager.instance.createInteractable(_interactibleID, interactiblePos, _interactedWith); 
+    }
+
+    public static void InteracibleTouched(Packet _packet) {
+        int _interactibleID = _packet.ReadInt();
+
+        GameManager.Interactables[_interactibleID].InteractibleTouched();
+    }
 }

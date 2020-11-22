@@ -643,6 +643,8 @@ MonoBehaviour:
     type: 3}
   playerPrefab: {fileID: 7677484484946083636, guid: 557e9a3a3d9ee014087f779a676d456f,
     type: 3}
+  interactablesPrefab: {fileID: 3323752890658901833, guid: f38e8094f0e1dae47bbe0028629b1184,
+    type: 3}
 --- !u!4 &761847842
 Transform:
   m_ObjectHideFlags: 0

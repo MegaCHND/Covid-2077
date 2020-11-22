@@ -7,9 +7,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public static Dictionary<int, PlayerManager> players = new Dictionary<int, PlayerManager>();
+    public static Dictionary<int, Interactable> Interactables = new Dictionary<int, Interactable>();
 
     public GameObject localPlayerPrefab;
     public GameObject playerPrefab;
+    public GameObject interactablesPrefab;
 
     private void Awake()
     {
@@ -44,5 +46,11 @@ public class GameManager : MonoBehaviour
         _player.GetComponent<PlayerManager>().id = _id;
         _player.GetComponent<PlayerManager>().username = _username;
         players.Add(_id, _player.GetComponent<PlayerManager>());
+    }
+
+    public void createInteractable(int _InteractibleID, Vector3 _position, bool _InteractedWith) {
+        GameObject _interactible = Instantiate(interactablesPrefab, _position, interactablesPrefab.transform.rotation);
+        _interactible.GetComponent<Interactable>().Initialize(_InteractibleID, _InteractedWith);
+        Interactables.Add(_InteractibleID, _interactible.GetComponent<Interactable>());
     }
 }
