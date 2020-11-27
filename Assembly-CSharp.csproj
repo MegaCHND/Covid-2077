@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyAIPathing.cs" />
     <Compile Include="Assets\Scripts\Packet.cs" />
   </ItemGroup>
   <ItemGroup>
