@@ -53,21 +53,22 @@
     <UnityVersion>2020.1.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Client.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\Client.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\GameManager.cs" />
     <Compile Include="Assets\Furniture\Scripts\MoveObjectController.cs" />
-    <Compile Include="Assets\Scripts\ClientHandle.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\ClientHandle.cs" />
     <Compile Include="Assets\Furniture\Scripts\MoveableObject.cs" />
-    <Compile Include="Assets\Scripts\TurnPlayer.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\ClientSend.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\ThreadManager.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\EnemyAIPathing.cs" />
-    <Compile Include="Assets\Scripts\Packet.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\TurnPlayer.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\ClientSend.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\ThreadManager.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyAIPathing.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\DoorTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
