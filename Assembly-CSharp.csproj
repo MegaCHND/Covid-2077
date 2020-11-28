@@ -55,12 +55,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MultiplayerScripts\Client.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\DoorOpener.cs" />
     <Compile Include="Assets\Furniture\Scripts\MoveObjectController.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\ClientHandle.cs" />
     <Compile Include="Assets\Scripts\MapScripts\DoorCloser.cs" />
     <Compile Include="Assets\Furniture\Scripts\MoveableObject.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\TurnPlayer.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\PlayFootstepSound.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\ClientSend.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\CameraController.cs" />
@@ -69,8 +71,7 @@
     <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyAIPathing.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
-    <Compile Include="Assets\Scripts\MapScripts\DoorOpener.cs" />
-    <Compile Include="Assets\Scripts\MapScripts\PlayFootstepSound.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\Shinelight.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
