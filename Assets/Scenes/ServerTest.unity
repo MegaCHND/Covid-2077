@@ -1460,6 +1460,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 9119432959987952491, guid: 3ea39a660a591624187eebb9d8a1b9b2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119432959987952491, guid: 3ea39a660a591624187eebb9d8a1b9b2,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119432959987952491, guid: 3ea39a660a591624187eebb9d8a1b9b2,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9119432960572067410, guid: 3ea39a660a591624187eebb9d8a1b9b2,
         type: 3}
       propertyPath: m_TagString

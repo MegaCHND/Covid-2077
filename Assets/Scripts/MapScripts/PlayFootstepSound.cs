@@ -60,6 +60,5 @@ public class PlayFootstepSound : MonoBehaviour
         audioSource.pitch = Random.Range(.8f, 1.1f);
         audioSource.Play();
         temp = Tf.position;
-        print("playing sound" + audioSource.clip);
     }
 }

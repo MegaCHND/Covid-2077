@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Shinelight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Light bumpLight;
+
+    private IEnumerator TurnLightOff()
     {
-        
+        yield return new WaitForSeconds(.2f);
+        bumpLight.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        print("Hit!");
+        if (other.CompareTag("Wall")) {
+            bumpLight.enabled = true;
+            StartCoroutine(TurnLightOff());
+        }
     }
 }
