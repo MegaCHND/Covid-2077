@@ -12,6 +12,8 @@ TagManager:
   - tile
   - 'hardwood '
   - 'pseudo-cement '
+  - Enemy
+  - DoorOpener
   layers:
   - Default
   - TransparentFX
