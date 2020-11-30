@@ -14,6 +14,11 @@ TagManager:
   - 'pseudo-cement '
   - Enemy
   - DoorOpener
+<<<<<<< Updated upstream
+=======
+  - Locker
+  - DoorTrigger
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

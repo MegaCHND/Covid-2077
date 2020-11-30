@@ -6,7 +6,8 @@ public class FlushSound : MonoBehaviour
 {
 
     public AudioClip flushSound;
-    AudioSource audioSource;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AIMover : MonoBehaviour
 {
+
+    //Base movement + waiting
     public Transform[] wayPoints;
     public float[] waitTimes;
     public int speed;
@@ -16,53 +18,70 @@ public class AIMover : MonoBehaviour
     private int currentSpeed;
     private float timer;
 
+    //Door Opening
+    private bool openingDoor;
+
+    //Audio Management
+    public AudioClip ACWalking;
+    public AudioClip ACSearchingKeys;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         wayPointIndex = 0;
         canMove = true;
+        openingDoor = false;
         currentSpeed = speed;
         transform.LookAt(wayPoints[wayPointIndex].position);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if(openingDoor)
         {
-            dist = Vector3.Distance(transform.position, wayPoints[wayPointIndex].position);
-            if (dist < .5f)
-            {
-                canMove = false;
-                timer = waitTimes[wayPointIndex];
-                currentSpeed = 0;
-            }
-            Patrol();
+
         }
 
-        if (!canMove)
+        if(!openingDoor)
         {
-            if (timer > 0)
+            if (canMove)
             {
-                timer -= Time.deltaTime;
+                dist = Vector3.Distance(transform.position, wayPoints[wayPointIndex].position);
+                if (dist < .5f)
+                {
+                    canMove = false;
+                    timer = waitTimes[wayPointIndex];
+                    currentSpeed = 0;
+                }
+                Patrol();
             }
-            else
+
+            if (!canMove)
             {
-                NextIndex();
-                currentSpeed = speed;
-                canMove = true;
+                if (timer > 0)
+                {
+                    timer -= Time.deltaTime;
+                }
+                else
+                {
+                    NextIndex();
+                    currentSpeed = speed;
+                    canMove = true;
+                }
             }
         }
-
     }
 
-    void Patrol()
+    private void Patrol()
     {
         transform.LookAt(wayPoints[wayPointIndex].position);
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
     }
 
-    void NextIndex()
+    private void NextIndex()
     {
         if (circleMovement)
         {
@@ -95,5 +114,19 @@ public class AIMover : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void playWalking()
+    {
+        audioSource.Stop();
+        audioSource.clip = ACWalking;
+        audioSource.Play();
+    }
+
+    private void playSearchingKeys()
+    {
+        audioSource.Stop();
+        audioSource.clip = ACSearchingKeys;
+        audioSource.Play();
     }
 }
