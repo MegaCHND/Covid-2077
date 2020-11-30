@@ -78,6 +78,7 @@
     <Compile Include="Assets\UI\Timer.cs" />
     <Compile Include="Assets\UI\ButtonPrompt.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

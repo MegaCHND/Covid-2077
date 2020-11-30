@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
 
     public static Dictionary<int, PlayerManager> players = new Dictionary<int, PlayerManager>();
     public static Dictionary<int, Interactable> Interactables = new Dictionary<int, Interactable>();
+    public static Dictionary<int, EnemyManager> enemies = new Dictionary<int, EnemyManager>();
 
     public GameObject localPlayerPrefab;
     public GameObject playerPrefab;
     public GameObject interactablesPrefab;
+    public GameObject enemyPrefabs;
 
     private void Awake()
     {
@@ -52,5 +54,11 @@ public class GameManager : MonoBehaviour
         GameObject _interactible = Instantiate(interactablesPrefab, _position, interactablesPrefab.transform.rotation);
         _interactible.GetComponent<Interactable>().Initialize(_InteractibleID, _InteractedWith);
         Interactables.Add(_InteractibleID, _interactible.GetComponent<Interactable>());
+    }
+
+    public void createEnemy(int _id, Vector3 _position, Quaternion _rotation) {
+        GameObject _enemy = Instantiate(enemyPrefabs, _position, _rotation);
+        _enemy.GetComponent<EnemyManager>().Initialize(_id);
+        enemies.Add(_id, _enemy.GetComponent<EnemyManager>());
     }
 }
