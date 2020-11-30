@@ -5,17 +5,23 @@ using UnityEngine.UI;
 
 public class Prompt : MonoBehaviour
 {
-    [SerializeField] private Image customImage;
-
-    void OnTriggerEnter(Collider other){
-        if (other.CompareTag("Player")){
-            customImage.enabled = true;
+    public GameObject button;
+    bool active;
+    void Start () {
+        button.SetActive(false);
+        active = false;
+    }
+    void OnTriggerEnter(Collider player) {
+        if (player.CompareTag("Player")) {
+            active = true;
         }
     }
-
-    void OnTriggerExit(Collider other){
-        if (other.CompareTag("Player")){
-            customImage.enabled = false;
+    void OnTriggerExit(Collider player) {
+        if (player.CompareTag("Player")) {
+            active = false;
         }
+    }
+    void Update(){
+        button.SetActive(active);
     }
 }

@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Compass : MonoBehaviour
 {
-    public Transform playerTransform;
-    Vector3 dir;
+    public float speed = 0f;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-    private void Update(){
-        dir.z = playerTransform.eulerAngles.y;
-        transform.localEulerAngles = dir;
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.A)) {
+            transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D)) {
+            transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
+        }
     }
 }
