@@ -16,10 +16,10 @@ public class PlayFootstepSound : MonoBehaviour
         temp = Tf.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        if (temp != Tf.position) {
+        if (temp != Tf.position)
+        {
             playSound();
         }
     }

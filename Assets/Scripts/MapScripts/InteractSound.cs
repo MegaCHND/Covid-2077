@@ -8,7 +8,7 @@ public class InteractSound : MonoBehaviour
     public AudioSource aSource;
     public float playTime;
 
-    private bool objectInProximity;
+    private GameObject objectInProximity;
     private float timer;
     private bool playingSound;
 
@@ -16,7 +16,7 @@ public class InteractSound : MonoBehaviour
     {
         aSource = GetComponent<AudioSource>();
         aSource.clip = null;
-        objectInProximity = false;
+        objectInProximity = null;
         playingSound = false;
     }
 
@@ -33,24 +33,25 @@ public class InteractSound : MonoBehaviour
                 stopSound();
             }
         }
-
-        if (objectInProximity == true && playingSound == false)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
+        if (objectInProximity != null) {
+            if (objectInProximity.CompareTag("Player") && playingSound == false)
             {
-                timer = playTime;
-                playSound();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    timer = playTime;
+                    playSound();
+                }
             }
-        }
+        } 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        objectInProximity = true;
+        objectInProximity = other.gameObject;
     }
     private void OnTriggerExit(Collider other)
     {
-        objectInProximity = false;
+        objectInProximity = null;
     }
 
     void playSound()

@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
+    public GameObject uiStuff;
     public GameObject startMenu;
     public InputField usernameField;
     public InputField ServerIPField;
@@ -30,6 +31,7 @@ public class UIManager : MonoBehaviour
     {
         Client.instance.changeIP(ServerIPFieldTxt.GetComponent<Text>().text);
         startMenu.SetActive(false);
+        uiStuff.SetActive(true);
         usernameField.interactable = false;
         ServerIPField.interactable = false;
         Client.instance.ConnectToServer();

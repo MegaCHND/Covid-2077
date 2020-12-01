@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class gameObjectCheckTest : MonoBehaviour
 {
-    public VentTeleport tester;
+    public GameObject tester;
+    public Text _text; 
 
     private void Update()
     {
-        if (tester != null) {
-            if (tester.GetE()) {
-                tester.gameObject.transform.position = tester.getPos();
-            }
+        if (tester != null)
+        {
+            _text.enabled = true;
+        }
+        else {
+            _text.enabled = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        tester = other.GetComponent<VentTeleport>();
+        if (other.CompareTag("Player") && tester == null) {
+            tester = other.gameObject;
+        }
     }
     private void OnTriggerExit(Collider other)
     {

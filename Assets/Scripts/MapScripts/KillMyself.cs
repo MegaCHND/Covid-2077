@@ -8,7 +8,7 @@ public class KillMyself : MonoBehaviour
 
     private void Update()
     {
-        if (killswitch.GetComponent<gameObjectCheckTest>().dewit) {
+        if (killswitch.GetComponent<gameObjectCheckTest>().tester) {
             Destroy(gameObject);
         }
     }
