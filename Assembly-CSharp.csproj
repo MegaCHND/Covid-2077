@@ -56,6 +56,8 @@
     <Compile Include="Assets\Scripts\MultiplayerScripts\Client.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MapScripts\DoorOpener.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\MoveTesting.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\VentTeleport.cs" />
     <Compile Include="Assets\Furniture\Scripts\MoveObjectController.cs" />
     <Compile Include="Assets\Scripts\MapScripts\FlushSound.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\ClientHandle.cs" />
@@ -74,11 +76,14 @@
     <Compile Include="Assets\Scripts\MultiplayerScripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerManager.cs" />
     <Compile Include="Assets\UI\Prompt.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyManager.cs" />
     <Compile Include="Assets\UI\timerButton.cs" />
     <Compile Include="Assets\UI\Timer.cs" />
     <Compile Include="Assets\UI\ButtonPrompt.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
-    <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\gameObjectCheckTest.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\KillMyself.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\DeleteSelf.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

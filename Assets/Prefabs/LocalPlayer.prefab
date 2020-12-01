@@ -43,7 +43,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8867924, g: 0.83194345, b: 0.56470275, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 8220397439855433600}
   - component: {fileID: 5718642435444430471}
   - component: {fileID: 8135134019487332384}
+  - component: {fileID: 7895420911262447380}
   m_Layer: 0
   m_Name: Model
   m_TagString: Player
@@ -344,6 +345,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &7895420911262447380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172086184467933461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c8e2f7e9cf4f9468a6bd1c404b0440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6066163656994988141
 GameObject:
   m_ObjectHideFlags: 0

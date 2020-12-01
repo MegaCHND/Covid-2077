@@ -62,6 +62,12 @@ public class ClientHandle : MonoBehaviour
         GameManager.Interactables[_interactibleID].InteractibleTouched();
     }
 
+    public static void InteractibleUnTouched(Packet _packet) {
+        int _interactibleID = _packet.ReadInt();
+
+        GameManager.Interactables[_interactibleID].InteractableUntouched();
+    }
+
     public static void spawnEnemy(Packet _packet) {
         int _enemyID = _packet.ReadInt();
         Vector3 _EnemyPos = _packet.ReadVector3();
@@ -78,5 +84,11 @@ public class ClientHandle : MonoBehaviour
             _enemy.transform.position = _EnemyPos;
             _enemy.transform.rotation = _EnemyRot;
         }
+    }
+
+    public static void playerDC(Packet _packet) {
+        int _id = _packet.ReadInt();
+        Destroy(GameManager.players[_id].gameObject);
+        GameManager.players.Remove(_id);
     }
 }

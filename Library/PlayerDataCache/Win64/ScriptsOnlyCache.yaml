@@ -2,10 +2,17 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Client
+    - DeleteSelf
+    - DoorCloser
+    - DoorOpener
+    - EnemyManager
+    - FlushSound
     - GameManager
     - Interactable
+    - PlayFootstepSound
     - PlayerController
     - PlayerManager
+    - Shinelight
     - ThreadManager
     - TurnPlayer
     - UIManager
@@ -50,13 +57,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -65,35 +76,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11834}
+    - Class: 114
+      Script: {instanceID: 11836}
     - Class: 114
       Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 11924}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 11994}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 13012}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 13228}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 13606}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13078}
     - Class: 114
-      Script: {instanceID: 13974}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13990}
+      Script: {instanceID: 13250}
     - Class: 114
-      Script: {instanceID: 14468}
+      Script: {instanceID: 13600}
+    - Class: 114
+      Script: {instanceID: 13628}
+    - Class: 114
+      Script: {instanceID: 13700}
+    - Class: 114
+      Script: {instanceID: 13996}
+    - Class: 114
+      Script: {instanceID: 14012}
+    - Class: 114
+      Script: {instanceID: 14220}
+    - Class: 114
+      Script: {instanceID: 14500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -123,6 +148,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: f087c23fbfa15475a0d110af46fb0496
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: a393e1d85ad3d56e5c48c9a58cc2d806
@@ -161,10 +198,16 @@ ScriptsOnlyBuild:
     className: BannerPlaceholder
   - hash:
       serializedVersion: 2
-      Hash: 1214425ee009c308a039b65d6f3f37fd
+      Hash: 6d3d8fe80a88f6072e7a91e7fa80f11b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4d27c511ce8a4726ff2badc31819ad32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorOpener
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -177,6 +220,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: f4e28146f8a878433144bafafa8268b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KillMyself
   - hash:
       serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
@@ -221,12 +270,6 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -237,6 +280,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveTesting
+  - hash:
+      serializedVersion: 2
+      Hash: 5f8b5981ae1a761384371c3968b9692a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VentTeleport
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -275,6 +330,12 @@ ScriptsOnlyBuild:
     className: MoveObjectController
   - hash:
       serializedVersion: 2
+      Hash: 5661da72d34b7c31106d685619995676
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FlushSound
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -305,6 +366,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 4d27c511ce8a4726ff2badc31819ad32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorCloser
+  - hash:
+      serializedVersion: 2
       Hash: 52bcb9c2a78bdd8d98a59e915c346e75
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
@@ -315,6 +382,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 783c0168bd9bfb6bc7bb86b245f37cb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shinelight
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -377,6 +450,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Compass
+  - hash:
+      serializedVersion: 2
       Hash: 3c91d889b13069da16bce43130453091
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -407,6 +486,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: d7489983a6ad31ae8f4d0045943baa53
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayFootstepSound
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Analytics.Editor.dll
     namespaceName: UnityEditor.Analytics
@@ -420,15 +505,27 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeleteSelf
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 05c26a69c1fde3f08133e03cc006af91
+      Hash: fdd65dd3017a3383ca78f79d24d105cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 633a2580f3f52f6483fbf891770e1aa3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIMover
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -441,12 +538,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: f087c23fbfa15475a0d110af46fb0496
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -581,6 +672,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: afb5c2abf54553530269175eb0edb61e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: gameObjectCheckTest
+  - hash:
+      serializedVersion: 2
+      Hash: db383debccf025fb7548a9120b6528c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Prompt
+  - hash:
+      serializedVersion: 2
       Hash: 893dbdbfe611d62e230a686ea89f1efd
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
@@ -593,10 +696,22 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 2ecdbe75f54c8965e9d317f6c9a2e0e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyManager
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 4f9206465f1016256971dbea808ed088
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: timerButton
   - hash:
       serializedVersion: 2
       Hash: a2612813f45d0ced02c3e4bc9dbea8b4
@@ -609,6 +724,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: b9c285966fc5a65f31de8cd84c6fe14b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -695,6 +816,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 36a9618c1a352c4916548052460abccd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPrompt
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -702,4 +829,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/ServerTest.unity
-  playerPath: C:/Users/megac/Desktop/GameClient.exe
+  playerPath: C:/Users/megac/Desktop/testing/GameClient.exe

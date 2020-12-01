@@ -50,6 +50,12 @@ public class Client : MonoBehaviour
         tcp.Connect(); // Connect tcp, udp gets connected once tcp is done
     }
 
+    public void changeIP(string _ip) {
+        if (_ip == null) {
+            ip = _ip;
+        }
+    }
+
     public class TCP
     {
         public TcpClient socket;
@@ -300,8 +306,10 @@ public class Client : MonoBehaviour
             { (int)ServerPackets.playerRotation, ClientHandle.PlayerRotation },
             { (int)ServerPackets.createInteractible, ClientHandle.CreateInteractible },
             { (int)ServerPackets.InteractibleTouched, ClientHandle.InteracibleTouched },
+            { (int)ServerPackets.InteractibleUnTouched, ClientHandle.InteractibleUnTouched },
             { (int)ServerPackets.spawnEnemy, ClientHandle.spawnEnemy},
-            { (int)ServerPackets.enemyPos, ClientHandle.enemyPos}
+            { (int)ServerPackets.enemyPos, ClientHandle.enemyPos},
+            { (int)ServerPackets.playerDC, ClientHandle.playerDC}
         };
         Debug.Log("Initialized packets.");
     }

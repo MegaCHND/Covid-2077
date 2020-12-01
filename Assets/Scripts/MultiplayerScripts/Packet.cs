@@ -13,15 +13,18 @@ public enum ServerPackets
     playerRotation,
     createInteractible,
     InteractibleTouched,
+    InteractibleUnTouched,
     spawnEnemy,
-    enemyPos
+    enemyPos,
+    playerDC
 }
 
 /// <summary>Sent from client to server.</summary>
 public enum ClientPackets
 {
     welcomeReceived = 1,
-    playerMovement
+    playerMovement,
+    playerInteract
 }
 
 public class Packet : IDisposable

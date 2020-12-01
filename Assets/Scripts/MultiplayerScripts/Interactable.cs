@@ -19,4 +19,8 @@ public class Interactable : MonoBehaviour
     public void InteractibleTouched() {
         InteractedWith = true;
     }
+
+    public void InteractableUntouched() {
+        InteractedWith = false;
+    }
 }

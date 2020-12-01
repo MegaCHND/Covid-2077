@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject startMenu;
     public InputField usernameField;
+    public InputField ServerIPField;
+    public GameObject ServerIPFieldTxt;
 
     private void Awake()
     {
@@ -26,8 +28,10 @@ public class UIManager : MonoBehaviour
     /// <summary>Attempts to connect to the server.</summary>
     public void ConnectToServer()
     {
+        Client.instance.changeIP(ServerIPFieldTxt.GetComponent<Text>().text);
         startMenu.SetActive(false);
         usernameField.interactable = false;
+        ServerIPField.interactable = false;
         Client.instance.ConnectToServer();
     }
 }
