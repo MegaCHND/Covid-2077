@@ -51,7 +51,7 @@ public class Client : MonoBehaviour
     }
 
     public void changeIP(string _ip) {
-        if (_ip == null) {
+        if (!String.IsNullOrEmpty(_ip)) {
             ip = _ip;
         }
     }
