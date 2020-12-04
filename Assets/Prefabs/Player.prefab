@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 829117775900897876}
   - component: {fileID: 1719157270277483131}
   - component: {fileID: 2998335891998679150}
-  - component: {fileID: 9173664884413471118}
+  - component: {fileID: 1028931870663514069}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -106,7 +106,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172086184467933461}
   m_Enabled: 1
---- !u!114 &9173664884413471118
+--- !u!114 &1028931870663514069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,11 +119,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FootSoundsArray:
-  - {fileID: 8300000, guid: b15b9fb354c83394b876dbbb91f108d3, type: 3}
-  - {fileID: 8300000, guid: 02d2ee9e346fb134b94046893238415e, type: 3}
-  - {fileID: 8300000, guid: ab6494454a3100f4c8cd750b75e9d24a, type: 3}
-  - {fileID: 8300000, guid: 82464afcfebec30428282edaffcce1c1, type: 3}
-  - {fileID: 8300000, guid: b61d549256a08d84ab2682a765880245, type: 3}
+  - {fileID: 8300000, guid: f0b99997113d2da418706500b12dec8a, type: 3}
+  - {fileID: 8300000, guid: c4c1bbe6218b2f646852913d361fb944, type: 3}
+  - {fileID: 8300000, guid: 33e4bf64996c69a4bb645199e9ecaf3c, type: 3}
+  - {fileID: 8300000, guid: 3d4facbfbf9db6449ac7d136a5e8b2ff, type: 3}
+  - {fileID: 8300000, guid: 01d776bafcd63dc43b29db34deab41f9, type: 3}
 --- !u!1 &7677484484946083636
 GameObject:
   m_ObjectHideFlags: 0

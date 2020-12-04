@@ -32,7 +32,6 @@ public class PlayFootstepSound : MonoBehaviour
      * pseudo-cement*/
     private void OnTriggerEnter(Collider other)
     {
-        print("Tiggered!");
         if (other.CompareTag("Vent"))
         {
             audioSource.clip = FootSoundsArray[4];

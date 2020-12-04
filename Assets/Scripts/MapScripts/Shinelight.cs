@@ -14,7 +14,6 @@ public class Shinelight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Hit!");
         if (other.CompareTag("Wall")) {
             bumpLight.enabled = true;
             StartCoroutine(TurnLightOff());

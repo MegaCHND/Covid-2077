@@ -54,6 +54,7 @@ public class Client : MonoBehaviour
         if (!String.IsNullOrEmpty(_ip)) {
             ip = _ip;
         }
+        print(ip);
     }
 
     public class TCP

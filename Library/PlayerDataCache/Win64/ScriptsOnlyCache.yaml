@@ -82,49 +82,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 11908}
+      Script: {instanceID: 11860}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 12600}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 13034}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 13076}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13078}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 13250}
     - Class: 114
-      Script: {instanceID: 13646}
+      Script: {instanceID: 13600}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13700}
     - Class: 114
-      Script: {instanceID: 14042}
+      Script: {instanceID: 13996}
     - Class: 114
-      Script: {instanceID: 14058}
+      Script: {instanceID: 14012}
     - Class: 114
-      Script: {instanceID: 14146}
+      Script: {instanceID: 14100}
     - Class: 114
-      Script: {instanceID: 14266}
+      Script: {instanceID: 14220}
     - Class: 114
-      Script: {instanceID: 14402}
+      Script: {instanceID: 14356}
     - Class: 114
-      Script: {instanceID: 14424}
+      Script: {instanceID: 14378}
     - Class: 114
-      Script: {instanceID: 14548}
+      Script: {instanceID: 14502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,6 +156,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: f087c23fbfa15475a0d110af46fb0496
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -172,12 +178,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Client
-  - hash:
-      serializedVersion: 2
-      Hash: 4bc4346a71a8df53a6b106f68ef3a190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -841,4 +841,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/ServerTest.unity
-  playerPath: C:/Users/megac/Desktop/testing/GameClient.exe
+  playerPath: C:/Users/megac/Desktop/ClientBuild/GameClient.exe
