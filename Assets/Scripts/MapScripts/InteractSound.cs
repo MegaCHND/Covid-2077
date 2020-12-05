@@ -6,6 +6,7 @@ public class InteractSound : MonoBehaviour
 {
     public AudioClip aClip;
     public AudioSource aSource;
+    public BeepBeep Beeper;
     public float playTime;
     public bool playedSound;
 
@@ -16,7 +17,6 @@ public class InteractSound : MonoBehaviour
     void Start()
     {
         aSource = GetComponent<AudioSource>();
-        aSource.clip = null;
         objectInProximity = null;
         playingSound = false;
         playedSound = false;
@@ -42,6 +42,7 @@ public class InteractSound : MonoBehaviour
                 {
                     timer = playTime;
                     playSound();
+                    Beeper.enabled = false;
                 }
             }
         } 
@@ -58,7 +59,15 @@ public class InteractSound : MonoBehaviour
 
     void playSound()
     {
-        if ((CompareTag("Vent")||CompareTag("Comp"))&&!playedSound) {
+        if ((CompareTag("Vent") || CompareTag("Comp")) && !playedSound) {
+            playingSound = true;
+            aSource.loop = true;
+            playedSound = true;
+            aSource.clip = aClip;
+            aSource.Play();
+        }
+        else if(CompareTag("Locker"))
+        {
             playingSound = true;
             aSource.loop = true;
             playedSound = true;

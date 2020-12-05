@@ -1553,6 +1553,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8484947641802151280, guid: 63c4cb6a0373a423d92bf634f802fa14,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484947641802151280, guid: 63c4cb6a0373a423d92bf634f802fa14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484947641802151280, guid: 63c4cb6a0373a423d92bf634f802fa14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c4cb6a0373a423d92bf634f802fa14, type: 3}
 --- !u!1 &931894819 stripped
@@ -2015,6 +2030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 1045816743}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
 --- !u!1 &1067412365
@@ -3962,6 +3978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 573ca95b532e2bb40a3d2641127d6f77, type: 3}
   aSource: {fileID: 9063564827579484740}
+  Beeper: {fileID: 9063564827579484850}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484740
@@ -4260,6 +4277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484756}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484758
@@ -4372,6 +4390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484758}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484760
@@ -4484,6 +4503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484760}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484762
@@ -4609,6 +4629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 9063564827579484762}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484765
@@ -4721,6 +4742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 573ca95b532e2bb40a3d2641127d6f77, type: 3}
   aSource: {fileID: 9063564827579484765}
+  Beeper: {fileID: 9063564827579484787}
   playTime: 8
   playedSound: 0
 --- !u!114 &9063564827579484767
@@ -4737,6 +4759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 9063564827579484768}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484768
@@ -4945,6 +4968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 573ca95b532e2bb40a3d2641127d6f77, type: 3}
   aSource: {fileID: 9063564827579484769}
+  Beeper: {fileID: 9063564827579484788}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484771
@@ -5057,6 +5081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 9063564827579484771}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484773
@@ -5169,6 +5194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 573ca95b532e2bb40a3d2641127d6f77, type: 3}
   aSource: {fileID: 9063564827579484773}
+  Beeper: {fileID: 9063564827579484789}
   playTime: 8
   playedSound: 0
 --- !u!114 &9063564827579484775
@@ -5185,6 +5211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 9063564827579484776}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484776
@@ -5393,6 +5420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 573ca95b532e2bb40a3d2641127d6f77, type: 3}
   aSource: {fileID: 9063564827579484777}
+  Beeper: {fileID: 9063564827579484790}
   playTime: 8
   playedSound: 0
 --- !u!82 &9063564827579484779
@@ -5505,6 +5533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484779}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484781
@@ -5617,6 +5646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484781}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484783
@@ -5729,6 +5759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: 3c066f4101f44de44a89c6a1895f0330, type: 3}
   aSource: {fileID: 9063564827579484783}
+  Beeper: {fileID: 0}
   playTime: 0.653
   playedSound: 0
 --- !u!82 &9063564827579484785
@@ -5841,5 +5872,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aClip: {fileID: 8300000, guid: c910f9bda95d5af4f8983c378cc7a903, type: 3}
   aSource: {fileID: 9063564827579484785}
+  Beeper: {fileID: 0}
   playTime: 8
   playedSound: 0
+--- !u!114 &9063564827579484787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063564827579484745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150297dd8f3c41439605246c647d516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beep: {fileID: 8300000, guid: 451a9624009b0ae4cb12dde5ea190604, type: 3}
+  source: {fileID: 0}
+--- !u!114 &9063564827579484788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063564827579484747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150297dd8f3c41439605246c647d516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beep: {fileID: 8300000, guid: 451a9624009b0ae4cb12dde5ea190604, type: 3}
+  source: {fileID: 0}
+--- !u!114 &9063564827579484789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063564827579484749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150297dd8f3c41439605246c647d516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beep: {fileID: 8300000, guid: 451a9624009b0ae4cb12dde5ea190604, type: 3}
+  source: {fileID: 0}
+--- !u!114 &9063564827579484790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063564827579484751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150297dd8f3c41439605246c647d516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beep: {fileID: 8300000, guid: 451a9624009b0ae4cb12dde5ea190604, type: 3}
+  source: {fileID: 0}
+--- !u!114 &9063564827579484850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063564827579484738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150297dd8f3c41439605246c647d516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beep: {fileID: 8300000, guid: 451a9624009b0ae4cb12dde5ea190604, type: 3}
+  source: {fileID: 0}
