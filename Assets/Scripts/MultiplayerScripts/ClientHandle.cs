@@ -62,6 +62,13 @@ public class ClientHandle : MonoBehaviour
         GameManager.Interactables[_interactibleID].InteractibleTouched();
     }
 
+    public static void InteractibleTouchedOnce(Packet _packet) {
+        int _interactibleID = _packet.ReadInt();
+        int _interactibleType = _packet.ReadInt();
+
+        GameManager.Interactables[_interactibleID].InteractibleTouchedOnce(_interactibleType);
+    }
+
     public static void InteractibleUnTouched(Packet _packet) {
         int _interactibleID = _packet.ReadInt();
 

@@ -7,17 +7,19 @@ public class InteractSound : MonoBehaviour
     public AudioClip aClip;
     public AudioSource aSource;
     public float playTime;
+    public bool playedSound;
 
     private GameObject objectInProximity;
     private float timer;
     private bool playingSound;
-
+    
     void Start()
     {
         aSource = GetComponent<AudioSource>();
         aSource.clip = null;
         objectInProximity = null;
         playingSound = false;
+        playedSound = false;
     }
 
     void Update()
@@ -56,10 +58,14 @@ public class InteractSound : MonoBehaviour
 
     void playSound()
     {
-        playingSound = true;
-        aSource.loop = true;
-        aSource.clip = aClip;
-        aSource.Play();
+        if ((CompareTag("Vent")||CompareTag("Comp"))&&!playedSound) {
+            playingSound = true;
+            aSource.loop = true;
+            playedSound = true;
+            aSource.clip = aClip;
+            aSource.Play();
+        }
+          
     }
 
     void stopSound()

@@ -38,12 +38,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741009342101910783}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8867924, g: 0.83194345, b: 0.56470275, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.05
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -105,11 +105,11 @@ GameObject:
   - component: {fileID: 829117775900897876}
   - component: {fileID: 1719157270277483131}
   - component: {fileID: 7750545346609916448}
-  - component: {fileID: 730584271333363292}
   - component: {fileID: 8220397439855433600}
   - component: {fileID: 5718642435444430471}
   - component: {fileID: 8135134019487332384}
   - component: {fileID: 7895420911262447380}
+  - component: {fileID: 1753721656226138334}
   m_Layer: 0
   m_Name: Model
   m_TagString: Player
@@ -202,19 +202,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172086184467933461}
   m_Enabled: 1
---- !u!114 &730584271333363292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172086184467933461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c316cf37d73adf45be810c10937adbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bumpLight: {fileID: 5298147078904435825}
 --- !u!114 &8220397439855433600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +344,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c8e2f7e9cf4f9468a6bd1c404b0440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1753721656226138334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172086184467933461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0554a1ec23fcf6341aa6248a06439ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tester: {fileID: 0}
+  _text: {fileID: 0}
 --- !u!1 &6066163656994988141
 GameObject:
   m_ObjectHideFlags: 0

@@ -308,6 +308,7 @@ public class Client : MonoBehaviour
             { (int)ServerPackets.createInteractible, ClientHandle.CreateInteractible },
             { (int)ServerPackets.InteractibleTouched, ClientHandle.InteracibleTouched },
             { (int)ServerPackets.InteractibleUnTouched, ClientHandle.InteractibleUnTouched },
+            { (int)ServerPackets.InteractibleTouchedOnce, ClientHandle.InteractibleTouchedOnce },
             { (int)ServerPackets.spawnEnemy, ClientHandle.spawnEnemy},
             { (int)ServerPackets.enemyPos, ClientHandle.enemyPos},
             { (int)ServerPackets.playerDC, ClientHandle.playerDC}

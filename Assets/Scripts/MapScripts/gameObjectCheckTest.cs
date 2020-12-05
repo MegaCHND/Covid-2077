@@ -6,8 +6,12 @@ using UnityEngine;
 public class gameObjectCheckTest : MonoBehaviour
 {
     public GameObject tester;
-    public Text _text; 
+    public Text _text;
 
+    private void Start()
+    {
+        _text = GameObject.Find("InteractText").GetComponent<Text>();
+    }
     private void Update()
     {
         if (tester != null)
@@ -21,8 +25,12 @@ public class gameObjectCheckTest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && tester == null) {
+        if ((other.CompareTag("Vent") || other.CompareTag("Comp") || other.CompareTag("Locker")) && tester == null) {
             tester = other.gameObject;
+            if ((other.CompareTag("Vent") || other.CompareTag("Comp")) && tester.GetComponent<InteractSound>().playedSound) {
+                tester = null;
+            }
+            
         }
     }
     private void OnTriggerExit(Collider other)
