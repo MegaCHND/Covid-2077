@@ -42,7 +42,9 @@ public class InteractSound : MonoBehaviour
                 {
                     timer = playTime;
                     playSound();
-                    Beeper.enabled = false;
+                    if (Beeper != null) {
+                        Beeper.enabled = false;
+                    } 
                 }
             }
         } 

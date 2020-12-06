@@ -80,13 +80,14 @@
     <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\MapScripts\gameObjectCheckTest.cs" />
     <Compile Include="Assets\UI\Prompt.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\BeepBeep.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\EnemyManager.cs" />
     <Compile Include="Assets\UI\timerButton.cs" />
     <Compile Include="Assets\Scripts\MapScripts\InteractSound.cs" />
     <Compile Include="Assets\UI\Timer.cs" />
     <Compile Include="Assets\UI\ButtonPrompt.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
-    <Compile Include="Assets\Scripts\MapScripts\BeepBeep.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\ObjectiveTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

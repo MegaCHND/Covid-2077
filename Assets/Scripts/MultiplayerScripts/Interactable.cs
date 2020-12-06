@@ -24,6 +24,7 @@ public class Interactable : MonoBehaviour
     public void InteractibleTouchedOnce(int type) {
         InteractedWith = true;
         InteractibleType = type;
+        Debug.Log("Done!");
     }
 
     public void InteractableUntouched() {

@@ -65,7 +65,7 @@ public class ClientHandle : MonoBehaviour
     public static void InteractibleTouchedOnce(Packet _packet) {
         int _interactibleID = _packet.ReadInt();
         int _interactibleType = _packet.ReadInt();
-
+        Debug.Log("Getting Packet" + _interactibleID + _interactibleType);
         GameManager.Interactables[_interactibleID].InteractibleTouchedOnce(_interactibleType);
     }
 
