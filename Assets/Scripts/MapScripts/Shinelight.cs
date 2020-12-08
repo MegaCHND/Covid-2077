@@ -5,10 +5,10 @@ using UnityEngine;
 public class Shinelight : MonoBehaviour
 {
     public Light bumpLight;
-    public float onTime = 2f;
+    public float onTime = 5f;
     public float offTime = 20f;
     private float timer;
-    private bool LightsOn;
+    public bool LightsOn;
 
     private void Start()
     {

@@ -13,6 +13,7 @@ public class BeepBeep : MonoBehaviour
         source = gameObject.GetComponent<AudioSource>();
         source.clip = beep;
         source.loop = true;
+        source.volume = .5f;
         source.Play();
     }
 }
