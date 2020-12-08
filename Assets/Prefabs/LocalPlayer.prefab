@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5383463689993079872
 Transform:
   m_ObjectHideFlags: 0
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 8135134019487332384}
   - component: {fileID: 7895420911262447380}
   - component: {fileID: 1753721656226138334}
+  - component: {fileID: 923308358798936710}
   m_Layer: 0
   m_Name: Model
   m_TagString: Player
@@ -358,6 +359,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tester: {fileID: 0}
   _text: {fileID: 0}
+--- !u!114 &923308358798936710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172086184467933461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c316cf37d73adf45be810c10937adbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bumpLight: {fileID: 5298147078904435825}
 --- !u!1 &6066163656994988141
 GameObject:
   m_ObjectHideFlags: 0

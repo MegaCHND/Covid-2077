@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 62
+  controlID: 68
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 117
+  controlID: 73
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 73
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -356,35 +356,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/MultiplayerScripts
+    - Assets/Scripts/MapScripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/MultiplayerScripts
+  - Assets/Scripts/MapScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\megac\Documents\Unity Games\Covid2077
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: c6420000
-    m_LastClickedID: 17094
-    m_ExpandedIDs: 00000000ae420000b0420000b2420000b4420000b642000000ca9a3b
+    m_SelectedIDs: fa420000
+    m_LastClickedID: 17146
+    m_ExpandedIDs: 00000000e4420000e6420000e8420000ea420000ec42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MapScripts
-      m_OriginalName: MapScripts
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 17092
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -398,7 +398,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae420000b0420000b2420000b4420000b6420000
+    m_ExpandedIDs: 00000000e4420000e6420000e8420000ea420000ec420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -581,9 +581,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.858999, y: 1, z: 6.4401984}
+    m_Target: {x: -9.357307, y: -0.4096431, z: -1.1923302}
     speed: 2
-    m_Value: {x: -15.858999, y: 1, z: 6.4401984}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -630,13 +630,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.48591232, y: -0.21397083, z: 0.12402059, w: -0.838307}
+    m_Target: {x: -0.47897163, y: 0.030794773, z: -0.016821776, w: -0.8771483}
     speed: 2
-    m_Value: {x: -0.48590404, y: -0.21396717, z: 0.124018475, w: -0.8382927}
+    m_Value: {x: -0.3539554, y: 0.14284329, z: -0.05479979, w: -0.92266375}
   m_Size:
-    m_Target: 46.46594
+    m_Target: 84.81015
     speed: 2
-    m_Value: 46.46594
+    m_Value: 81.158035
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -690,9 +690,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7e300000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3ad7ffff7cd9ffff86dafffffedbffff2cdcffff32eaffff56fbffffa03a0000b23a0000043b0000
+      m_ExpandedIDs: deecffff00edffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

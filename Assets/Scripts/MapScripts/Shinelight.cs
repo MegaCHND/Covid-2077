@@ -5,18 +5,30 @@ using UnityEngine;
 public class Shinelight : MonoBehaviour
 {
     public Light bumpLight;
+    public float onTime = 2f;
+    public float offTime = 20f;
+    private float timer;
+    private bool LightsOn;
 
-    private IEnumerator TurnLightOff()
+    private void Start()
     {
-        yield return new WaitForSeconds(.2f);
+        timer = offTime;
+        LightsOn = false;
         bumpLight.enabled = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if (other.CompareTag("Wall")) {
+        timer -= Time.deltaTime;
+        if (timer < 0 && LightsOn) {
+            timer = offTime;
+            LightsOn = false;
+            bumpLight.enabled = false;
+        }
+        else if (timer < 0 && !LightsOn) {
+            timer = onTime;
+            LightsOn = true;
             bumpLight.enabled = true;
-            StartCoroutine(TurnLightOff());
         }
     }
 }
