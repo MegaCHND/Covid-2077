@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\MultiplayerScripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScripts\ObjectiveTracker.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\MapScripts\gameObjectCheckTest.cs" />
     <Compile Include="Assets\UI\Prompt.cs" />
@@ -87,7 +88,7 @@
     <Compile Include="Assets\UI\Timer.cs" />
     <Compile Include="Assets\UI\ButtonPrompt.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScripts\Packet.cs" />
-    <Compile Include="Assets\Scripts\MultiplayerScripts\ObjectiveTracker.cs" />
+    <Compile Include="Assets\Scripts\MapScripts\playThud.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

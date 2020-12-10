@@ -6,7 +6,7 @@ public class Shinelight : MonoBehaviour
 {
     public Light bumpLight;
     public float onTime = 5f;
-    public float offTime = 20f;
+    public float offTime = 15f;
     private float timer;
     public bool LightsOn;
 

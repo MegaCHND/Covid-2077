@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - TurnPlayer
     - UIManager
     - gameObjectCheckTest
+    - playThud
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -99,41 +100,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 13030}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 13032}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 13208}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13602}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13630}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13702}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13704}
     - Class: 114
-      Script: {instanceID: 14000}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14016}
+      Script: {instanceID: 14002}
     - Class: 114
-      Script: {instanceID: 14104}
+      Script: {instanceID: 14018}
     - Class: 114
-      Script: {instanceID: 14206}
+      Script: {instanceID: 14106}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 14208}
     - Class: 114
-      Script: {instanceID: 14362}
+      Script: {instanceID: 14228}
     - Class: 114
-      Script: {instanceID: 14384}
+      Script: {instanceID: 14364}
     - Class: 114
-      Script: {instanceID: 14508}
+      Script: {instanceID: 14386}
+    - Class: 114
+      Script: {instanceID: 14510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -475,6 +478,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveableObject
+  - hash:
+      serializedVersion: 2
+      Hash: 0439f4196153494e7587047e74af5b58
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: playThud
   - hash:
       serializedVersion: 2
       Hash: afc5b93a7b192de2dcb3832fe35a5c7e
